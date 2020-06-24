@@ -49,13 +49,13 @@ function eventListeners() {
       questionList.removeChild(
         event.target.parentElement.parentElement.parentElement
       );
-      console.log(data);
+      // console.log(data);
 
       let tempData = data.filter(function (item) {
         return item.id !== parseInt(id);
       });
       data = tempData;
-      console.log(data);
+      // console.log(data);
     } else if (event.target.classList.contains("show-answer")) {
       event.target.nextElementSibling.classList.toggle("showItem");
     } else if (event.target.classList.contains("edit-flashcard")) {
